@@ -49,6 +49,7 @@ app.UseMiddleware<CustomLoggingMiddleware>();
 
 app.UseAuthorization();
 
+app.UseMiddleware<TimingMiddleware>();
 app.MapControllers();
 
 app.Run();
